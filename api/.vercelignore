@@ -1,0 +1,12 @@
+.env
+.env.*
+composer.lock
+package-lock.json
+node_modules
+vendor
+*.log
+.git
+.gitignore
+.gitattributes
+.idea
+.vscode 
