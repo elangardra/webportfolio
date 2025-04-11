@@ -5,16 +5,11 @@ export default defineConfig({
     plugins: [
         laravel({
             input: ['resources/css/app.css', 'resources/js/app.js'],
-            refresh: true,
-            buildDirectory: 'public'
+            refresh: true
         }),
     ],
     build: {
-        outDir: 'public',
-        emptyOutDir: false,
-        manifest: true,
-        rollupOptions: {
-            input: ['resources/css/app.css', 'resources/js/app.js']
-        }
+        outDir: 'dist',
+        emptyOutDir: true
     }
 });
