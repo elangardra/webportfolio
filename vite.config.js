@@ -16,9 +16,10 @@ export default defineConfig({
                 app: './resources/js/app.js'
             },
             output: {
-                entryFileNames: `assets/[name].js`,
-                chunkFileNames: `assets/[name].js`,
-                assetFileNames: `assets/[name].[ext]`
+                dir: 'dist',
+                entryFileNames: 'assets/[name].js',
+                chunkFileNames: 'assets/[name].js',
+                assetFileNames: 'assets/[name].[ext]'
             }
         }
     }

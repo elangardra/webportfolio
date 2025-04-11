@@ -1,11 +1,9 @@
-/vendor
-/node_modules
+.git
 .env
 .env.*
 !.env.example
-.git*
-.idea
-.vscode
+/vendor
+/node_modules
 /storage/*.key
 /storage/framework/cache/*
 /storage/framework/sessions/*
@@ -13,4 +11,7 @@
 /storage/logs/*
 /bootstrap/cache/*
 /tests
-/database/*.sqlite* 
+/database/*.sqlite*
+.idea
+.vscode
+*.log 

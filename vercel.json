@@ -1,8 +1,8 @@
 {
     "version": 2,
+    "framework": null,
     "buildCommand": "npm run build",
     "outputDirectory": "dist",
-    "framework": null,
     "functions": {
         "api/*.php": {
             "runtime": "vercel-php@0.6.0"
@@ -12,5 +12,7 @@
         { "src": "/build/(.*)", "dest": "/build/$1" },
         { "src": "/assets/(.*)", "dest": "/assets/$1" },
         { "src": "/(.*)", "dest": "/api/index.php" }
-    ]
+    ],
+    "rootDirectory": ".",
+    "devCommand": "npm run dev"
 } 
