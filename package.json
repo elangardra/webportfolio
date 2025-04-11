@@ -3,7 +3,8 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "vite build && cp -r public/* dist/",
+        "build": "vite build && npm run copy-files",
+        "copy-files": "xcopy /E /I /Y public\\* dist\\ && xcopy /E /I /Y api\\* dist\\api\\",
         "preview": "vite preview"
     },
     "devDependencies": {
