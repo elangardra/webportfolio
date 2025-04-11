@@ -23,3 +23,10 @@ yarn-error.log
 /.vscode
 /.zed
 /.vagrant
+.DS_Store
+Thumbs.db
+
+# Keep these files
+!.gitignore
+!.nojekyll
+!.env.example

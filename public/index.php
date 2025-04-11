@@ -17,4 +17,10 @@ require __DIR__.'/../vendor/autoload.php';
 /** @var Application $app */
 $app = require_once __DIR__.'/../bootstrap/app.php';
 
+if (file_exists(__DIR__.'/../.env')) {
+    $app->loadEnvironmentFrom('.env');
+} else {
+    $app->loadEnvironmentFrom('.env.example');
+}
+
 $app->handleRequest(Request::capture());
