@@ -3,7 +3,14 @@
 .env
 .env.*
 !.env.example
-.git
-.gitignore
+.git*
 .idea
-.vscode 
+.vscode
+/storage/*.key
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/logs/*
+/bootstrap/cache/*
+/tests
+/database/*.sqlite* 
